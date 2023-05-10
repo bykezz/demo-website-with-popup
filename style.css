@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@font-face {
+    font-family: 'Klavika Basic';
+    src: url('path/to/KlavikaBasic-Regular.woff2') format('woff2'),
+        url('path/to/KlavikaBasic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body-container {
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+}
+
+h1 {
+    padding-left: 3%;
+    font-family: 'Klavika Basic', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #2D748E;
+}
+
+.end-to-end {
+    padding-left: 3%;
+    position: absolute;
+    width: 35%;
+    height: 15%;
+}
+
+.end-to-end p {
+    font-family: 'Klavika Basic', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.25;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #F2B760;
+}
+
+.description {
+    margin-top: 2.5%;
+    width: 60%;
+    height: 10%;
+    margin-left: 55%;
+}
+
+.description p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #191A1B;
+}
+
+.view-all {
+    margin-top: 0.4%;
+    margin-left: 55%;
+}
+
+.view-all-capabilities {
+    border: none;
+    font-size: 1.6rem;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.view-all-capabilities:hover {
+    color: #F2B760;
+}
+
+.demo-popup {
+    position: fixed;
+    z-index: 6;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    display: none;
+    background-color: black;
+}
+
+.demo-popup-content {
+    position: fixed;
+    z-index: 7;
+    top: 50%;
+    left: 50%;
+    width: 1257px;
+    height: 665px;
+    transform: translate(-50%, -50%);
+    background-color: #D9D9D9;
+    padding: 16px;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 28%;
+    text-align: center;
+    color: #000000;
+
+
+}
+
+.demo-popup-content p {
+    padding-top: 20%;
+}
+
+.demo-popup-close {
+    position: absolute;
+    left: 90%;
+    top: 13.19%;
+    font-size: 60px;
+    border: none;
+    background-color: #D9D9D9;
+}
+
+.card-container1 {
+    display: flex;
+    width: 1700px;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.first-card1 {
+    background-image: url("com-images/penruler.png");
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 3cm;
+    position: absolute;
+    clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 0%);
+    width: 368px;
+    height: 400px;
+    background-color: #F2B760;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom-left-radius: 3em;
+    border-top-left-radius: 3em;
+    border: 1px solid black;
+}
+
+.first-card1 .card-content {
+    visibility: hidden;
+}
+
+.first-card1:hover .card-content {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0.3s;
+}
+
+.first-card1:hover {
+    background-image: url("com-images/design\ and\ dev.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 0% 0%;
+}
+
+.first-card1:hover .card-content1 {
+    visibility: hidden;
+}
+
+.first-card1 .card-content1 {
+    border-bottom-left-radius: 3em;
+}
+
+.second-card1 {
+    background-image: url("com-images/materials.png");
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 3cm;
+    margin-left: 347px;
+    position: absolute;
+    z-index: 4;
+    width: 368px;
+    height: 400px;
+    background-color: #252525;
+    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 0%);
+    border: 1px solid black;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.second-card1 .card-content {
+    visibility: hidden;
+}
+
+.second-card1:hover .card-content {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.3s;
+
+}
+
+.second-card1:hover {
+    background-image: url("com-images/material\ expertise.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 0% 0%;
+}
+
+.second-card1:hover .card-content1 {
+    visibility: hidden;
+}
+
+.third-card1 {
+    background-image: url("com-images/complexcomp.png");
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 3cm;
+    margin-left: 694px;
+    position: absolute;
+    z-index: 3;
+    width: 368px;
+    height: 400px;
+    background-color: #F2B760;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 0%);
+    border: 1px solid black;
+}
+
+.third-card1 .card-content {
+    visibility: hidden;
+}
+
+.third-card1:hover .card-content {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.3s;
+
+}
+
+.third-card1:hover {
+    background-image: url("com-images/complex\ component.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 0% 0%;
+}
+
+.third-card1:hover .card-content1 {
+    visibility: hidden;
+}
+
+.fourth-card1 {
+    background-image: url("com-images/arrowsmanufacture.png");
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 3cm;
+    margin-left: 1040px;
+    position: absolute;
+    z-index: 2;
+    width: 368px;
+    height: 400px;
+    background-color: #252525;
+    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 0% 0%);
+    border: 1px solid black;
+}
+
+.fourth-card1 .card-content {
+    visibility: hidden;
+}
+
+.fourth-card1:hover .card-content {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.3s;
+
+}
+
+.fourth-card1:hover {
+    background-image: url("com-images/manufacturing\ and\ assembly.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 0% 0%;
+}
+
+.fourth-card1:hover .card-content1 {
+    visibility: hidden;
+}
+
+.fifth-card1 {
+    background-image: url("com-images/finisheddevicebox.png");
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 3cm;
+    position: absolute;
+    margin-left: 1386px;
+    z-index: 1;
+    width: 368px;
+    height: 400px;
+    background-color: #F2B760;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
+    border: 1px solid black;
+}
+
+.fifth-card1 .card-content {
+    visibility: hidden;
+}
+
+.fifth-card1:hover .card-content {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.3s;
+
+}
+
+.fifth-card1:hover {
+    background-image: url("com-images/finished\ device\ services.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 0% 0%;
+}
+
+.fifth-card1:hover .card-content1 {
+    visibility: hidden;
+}
+
+.card-content1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 10px;
+    margin-top: 50%;
+    position: absolute;
+    width: 385px;
+    height: 52px;
+    left: 0px;
+    top: 160px;
+    border-bottom-right-radius: 3em;
+    background-color: white;
+
+
+}
+
+h3 {
+    padding-left: 2cm;
+}
+
+
+.card-content {
+    background-color: white;
+    margin-top: 5.55cm;
+    width: 388px;
+    height: 156px;
+    bottom: 0px;
+    flex: 1;
+    border-bottom-right-radius: 3em;
+    opacity: 0;
+}
+
+
+
+
+
+h2 {
+    font-family: 'Klavika Basic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 10mm;
+    color: #191A1B;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.paragraph {
+    padding-left: 10mm;
+    width: 256px;
+    height: 72px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #191A1B;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+
+.learn {
+    padding-top: 2mm;
+    padding-left: 10mm;
+}
+
+.learn-more {
+    border-color: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    background-color: transparent;
+    font-family: 'Klavika Basic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F2B760;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
